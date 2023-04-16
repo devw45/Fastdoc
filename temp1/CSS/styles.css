@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    background: white;
+    background: #131313;
     height: 80px;/*flexible*/
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
 #navbar__logo {
     /*makes background color the gradient */
     background-color: #ff8177;
-    background-image:linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image:linear-gradient(to top, #ff512f 0%, #dd2476 100%);
     background-size: 100%;
     /*makes the letters the gradient*/
     -webkit-background-clip:text;
@@ -46,10 +46,6 @@
     font-weight:700;
 }
 
-.fa-gem {
-    margin-right:0.5rem;
-}
-
 .navbar__menu {
     display:flex;
     align-items: center;
@@ -62,13 +58,45 @@
 }
 
 .navbar__links {
-    color: black;
+    color: white;
     display: flex;
     align-items:center;
     justify-content: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+}
+
+.dropdownSubject > .link:focus + .dropdown{
+    opacity:50;
+}
+
+.dropdown ul  {
+    opacity:0;
+    position:absolute;
+    background-color:red;
+    transform: translateX(-95px) translateY(30px);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.dropdown ul li {
+    list-style:none;
+    position:relative;
+    border-radius:10px;
+}
+
+.dropdown ul li a {
+    display:block;
+    color:white;
+    padding:24px 14px;
+    font-size:1rem;
+    text-decoration:none;
+    text-align:left;
+}
+
+.dropdown ul li a:hover {
+    background: #596164;
+    border-radius:25px;
 }
 
 .navbar__btn {
@@ -90,17 +118,17 @@
     border: none;
     outline:none;
     border-radius:4px;
-    background: #f77062;
-    color:#fff;
+    background: #d42a4c;
+    color:white;
+    transition: .5s;
 }
 
 .button:hover {
-    background: #4837ff;
-    transition: all 0.3s ease;
+    transform: translateY(-5px);
 }
 
 .navbar__links:hover {
-    color: #f77062;
+    color: #d42a4c;
     transition: all 0.3s ease;
 }
 
@@ -148,7 +176,7 @@
 	height: 3px;
 	margin: 5px auto;
 	transition: all 0.3s ease-in-out;
-	background:black;
+	background: white;
     }
 
     .navbar__item {
@@ -203,7 +231,7 @@
 }
 
 .main {
-    background-color:white;
+    background-color:#131313;
 }
 
 .main__container {
@@ -213,28 +241,17 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: white;
+    background-color: #131313;
     z-index:1;
     width:100%;
     max-width:1300px;
     padding:0 50px;
 }
 
-.main__content h1 {
-    font-size:4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size:100%;
-    -webkit-background-clip:text;
-    -moz-background-clip:text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.main__content h5 {
+.main__name {
     font-size:3rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-image: linear-gradient(to top, #ff512f 0%, #dd2476 100%);
     background-size:100%;
     -webkit-background-clip:text;
     -moz-background-clip:text;
@@ -246,12 +263,12 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight:700;
-    color:black;
+    color:white;
 }
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    background-image: linear-gradient(to top, #ff512f 0%, #dd2476 100%);
     padding:14px 32px;
     border:none;
     border-radius:4px;

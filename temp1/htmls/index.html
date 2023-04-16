@@ -10,7 +10,7 @@
   <body>
     <nav class="navbar">
       <div class="navbar__container">
-	<a href="/" id="navbar__logo">NEXT</a><!-- id for js -->
+	<a href="./index.html" id="navbar__logo">img</a><!-- id for js -->
 	<div class="navbar__toggle" id="mobile-menu">
 	  <span class="bar"></span>
 	  <span class="bar"></span>
@@ -21,28 +21,45 @@
 	  <!-- navbar list -->
 	  <li class="navbar__item">
 	    <a href="/" class="navbar__links"><!-- apparently '/' sends to coder merlin homepage -->
-	      Home
+	      About
 	    </a>
 	  </li>
 	  
 	  <!-- navbar list -->
+	  <div class="dropdownSubject">
+	    <li class="navbar__item">
+	      <div class="navbar__links" > 
+		Essays
+	      </div>
+	      
+	    </li>
+	    
+	    <div class="dropdown">
+	      <ul>
+		<li><a href="./">Fingerprint</a></li>
+		<li><a href="./">AI Sentience</a></li>
+		<li><a href="./">Decision Making</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	  <!-- navbar list -->
 	  <li class="navbar__item">
-	    <a href="./tech.html" class="navbar__links">
-	      Tech
-	    </a>
+	    <div class="navbar__links">
+	      Projects
+	    </div>
 	  </li>
-
+	  
 	  <!-- navbar list -->
 	  <li class="navbar__item">
 	    <a href="/" class="navbar__links">
-	      Products
+	      Journals
 	    </a>
 	  </li>
-
+	  
 	  <!-- navbar list -->
 	  <li class="navbar__btn">
 	    <a href="/" class="button">
-	      Sign Up
+	      Contact
 	    </a>
 	  </li>
 
@@ -50,13 +67,12 @@
       </div>
     </nav>
 
-    <!-- hero thing -->
+    <!-- main -->
     <div class="main">
       <div class="main__container">
 	<div class="main__content">
-	  <h1>FastDoc</h1>
-	  <h5>URGENT CARE</h5>
-	  <p>see what makes us different.</p>
+	  <h1 class="main__name">Devin Wingfield</h1>
+	  <p>Welcome to my digital portfolio</p>
 	  <button class="main__btn"><a href="/">Get started</a></button>
 	</div>
 	<div class="main__img--container">
