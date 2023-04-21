@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>FastDoc Urgent Care</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="banner">
+      <div class="navbar">
+	<img src="">
+	<ul>
+	  <li><a href="./">Home</a></li>
+	  <li><a href="./">thing1</a></li>
+	  <li><a href="./">thing2</a></li>
+	  <li><a href="./">thing3</a></li>
+	  <li><a href="./">thing4</a></li>
+	</ul>
+      </div>
+
+<!--      <img src=""> --><!-- enter FastDoc img -->
+      <div class="content">
+	<h1>Plan an Appointment</h1>
+	<p>click the link to start getting better????</p>
+
+	<div>
+	  <button type="button"><span></span>SIGN UP</button>
+	  <button type="button"><span></span>APPOINTMENTS</button>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

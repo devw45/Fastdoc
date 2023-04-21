@@ -83,7 +83,9 @@ body {
     background:#131313;
     font-size: 1.1rem;
 }
-
+.nav__dropdown__btn:active + .dropdown--menu{
+    display: block;
+}
 .nav__dropdown__btn:hover {
     color:#d42a4c;
     transition: .3s;
@@ -102,7 +104,7 @@ body {
     padding: .75rem;
     border-radius: .25rem;
     box-shadow: 0 2px 15px 0 rgba(0,0,0,0.9);
-    opacity:0;
+    opacity: 0;
 }
 
 .dropdown > .button:focus + .dropdown--menu {
@@ -251,7 +253,7 @@ body {
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 100vh;
     background-color: #131313;
     z-index:1;
     width:100%;
