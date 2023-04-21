@@ -58,7 +58,7 @@
 .navbar ul li:hover::after {
     width:100%;
 }
-
+/* index */
 .content {
     width: 100%;
     position: absolute;
@@ -110,3 +110,34 @@ button:hover span {
     width:100%;
 }
 
+/* services */
+
+.list__titles {
+    top:50%;
+    width: 100%;
+    display:flex;
+    color:#009688;
+    padding: 40px 0;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.services__content {
+    top:50%;
+}
+
+.tests {
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    display:flex;
+    align-items:center;
+}
+
+.tests ul li {
+    color:white;
+    list-style: none;
+    text-align:center;
+    padding:10px 0;
+}
+    
