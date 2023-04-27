@@ -1,7 +1,27 @@
 * {
     margin:0;
     padding:0;
-    font-family:sans-serif;
+    font-family:Gill Sans;
+}
+
+body {
+    background:#131313;
+}
+
+.universal__contactInfo {
+    width: 100%;
+    height:10vh; 
+    position: absolute;
+    text-align:center;
+    color:grey;
+}
+
+.universal__contactInfo p {
+    padding: 3vh 0;
+    font-size:1rem;
+    font-famile:sans-serif;
+    whtie-space:pre-wrap;
+    line-height:120%;
 }
 
 .banner {
@@ -10,6 +30,10 @@
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('./../Images/background.png');
     background-size: cover;
     background-position:center;
+    
+    /*keeps bacgkround in one place*/
+    position:relative;
+    background-attachment:fixed;
 }
 
 .logo {
@@ -18,12 +42,14 @@
 }
 
 .navbar {
-    width: 85%;
+    width: 90%;
     margin: auto;
     padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content:space-between;
+    position:absolute;/*scrolls with user if fixed*/
+    left:5vw;
 }
 
 .navbar h1 {
@@ -44,6 +70,27 @@
     text-transform:uppercase;
 }
 
+.navbar button {
+    width: 100px;
+    padding: 15px 5px;
+    text-align:center;
+    border-radius: 25px;
+    border:none;
+    font-weight: bold;
+    background:#009688;
+    color:white;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    text-transform:uppercase;
+    transition: .3s;
+}
+
+.navbar button:hover {
+    background:white;
+    color:#131313;
+}
+
 .navbar ul li::after {
     content: '';
     height:3px;
@@ -58,6 +105,7 @@
 .navbar ul li:hover::after {
     width:100%;
 }
+
 /* index */
 .content {
     width: 100%;
@@ -79,13 +127,12 @@
     line-height: 25px;
 }
 
-button{
+.content button{
     width: 200px;
     padding: 15px 0;
     text-align:center;
     margin: 20px 10px;
     border-radius: 25px;
-    font-weight: bold;
     border: 2px solid #009688;
     background:transparent;
     color:white;
@@ -110,24 +157,115 @@ button:hover span {
     width:100%;
 }
 
+/*about us section*/
+
+.main__aboutUs {
+    width: 100%;
+    height: 30vh;
+    padding:20vh 0;
+    background:#131313;
+    color:white;
+}
+
+.main__aboutUs h3 {
+    font-size:3rem;
+    padding-bottom: 5vh;
+    position:absolute;
+    margin-top:-5vh;
+    left:10vw;
+}
+
+.main__aboutUs p {
+    color:grey;
+    padding:2rem 10vw;;
+    font-size:1.3rem;
+    width:75%;
+}
+
 /* services */
 
+.serivces__all {
+    position:absolute;
+    margin: 20vh 0;
+}
+
+#services__all-bottom {
+    transform: translateY(-35vh);
+}
+
+.services__btn {
+    width: 100%;
+    transform: translateY(13vh);
+    text-align:center;
+    color:white;
+}
+
+.services__btn button {
+    width: 300px;
+    padding: 20px 0;
+    text-align:center;
+    margin: 20px 10px;
+    border-radius: 27px;
+    font-size:1.3rem;
+    border: 2px solid #009688;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+
+
+
+.services__examples {
+    width: 90%;
+    margin: auto;
+    padding: 20vh 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    left:5vw;
+}
+
+.services__examples-item {
+    color:white;
+    background:linear-gradient(to top, #009688 0%, #30d5c8 100%);
+    padding: 2rem;
+    border-radius:10px;
+    
+}
+
+.services__examples-item img {
+    border-radius:5px;
+    height: 10vh;
+}
+
+.services__examples-item-text {
+    padding:10px 0;
+    text-align:center;
+    align-items:center;
+}
+
+.services__content {
+    background:#31313190;
+    margin:0 5vw;
+    border-radius:4px;
+    transform: translateY(-20vh);
+}
+
 .list__titles {
-    top:50%;
     width: 100%;
     display:flex;
     color:#009688;
     padding: 40px 0;
     justify-content: space-around;
     align-items:center;
-}
-
-.services__content {
-    top:50%;
+    font-size:2rem;
 }
 
 .tests {
     width: 100%;
+    padding: 0 0 20px 0;
     display:flex;
     justify-content: space-around;
     display:flex;
@@ -140,4 +278,6 @@ button:hover span {
     text-align:center;
     padding:10px 0;
 }
-    
+
+/* Doctors */
+
