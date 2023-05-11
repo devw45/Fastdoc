@@ -142,6 +142,15 @@ body {
     overflow:hidden;
 }
 
+a {
+    text-decoration:none;
+    color:white;
+}
+
+a:hover {
+    color:black;
+}
+
 span{
     background: #009688;
     height:100%;
@@ -156,6 +165,7 @@ span{
 
 button:hover span {
     width:100%;
+    color:black;
 }
 
 /*about us section*/
@@ -246,10 +256,11 @@ button:hover span {
 
 .services__examples-item-text {
     padding:10px 0;
-    width: 200px;
+    width: 8vw;
     text-align:center;
     align-items:center;
-    transform: translateX(-8%);
+    transform: translateX(9%);
+    
 }
 
 .services__content {
