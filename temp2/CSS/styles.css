@@ -1,7 +1,8 @@
 * {
     margin:0;
     padding:0;
-    font-family:Gill Sans;
+    font-family:sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -132,6 +133,7 @@ body {
     padding: 15px 0;
     text-align:center;
     margin: 20px 10px;
+    font-weight:bold;
     border-radius: 25px;
     border: 2px solid #009688;
     background:transparent;
@@ -215,20 +217,19 @@ button:hover span {
     overflow:hidden;
 }
 
-
-
 .services__examples {
     width: 90%;
     margin: auto;
     padding: 20vh 0;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    left:5vw;
+    justify-content:space-around;
 }
 
 .services__examples-item {
     color:white;
+    width:12vw;
+    height:27vh;
     background:linear-gradient(to top, #009688 0%, #30d5c8 100%);
     padding: 2rem;
     border-radius:10px;
@@ -236,14 +237,20 @@ button:hover span {
 }
 
 .services__examples-item img {
-    border-radius:5px;
-    height: 10vh;
+    height: 15vh;
+    display:block;
+    padding:0;
+    margin: 0 auto;
+    width:100%;
+    object-fit:contain;
 }
 
 .services__examples-item-text {
     padding:10px 0;
+    width: 200px;
     text-align:center;
     align-items:center;
+    transform: translateX(-8%);
 }
 
 .services__content {
@@ -281,3 +288,87 @@ button:hover span {
 
 /* Doctors */
 
+.doctors__container {
+    padding:0 1rem;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+}
+
+.heading {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 90%;
+    color: white;
+    padding: 13rem 6% 0 6%;
+    margin: 0 3rem;
+    min-width:1250px;
+}
+
+.heading h1 {
+    font-weight: lighter;
+    font-family: "Trebuchet MS";
+}
+
+.wrapper {
+    display:flex;
+    align-items:center;
+    padding: 0 1rem;
+    min-width: 1400px;
+}
+
+.wrapper-img {
+    padding: 2rem 2rem;
+}
+
+.wrapper-img img {
+    height: 80%;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px ;
+    object-fit:cover;
+    transform: translateX(20%);
+    transition: .5s;
+}
+
+.wrapper-img:nth-child(1) {
+    transform: translateX(10%);
+}
+
+.wrapper-img:nth-child(2) {
+    transform: translateX(-1%);
+}
+
+.wrapper-img:nth-child(3) {
+    transform: translateX(1%);
+}
+
+.wrapper-img:nth-child(4) {
+    transform: translateX(-1%);
+}
+
+.wrapper-img img:hover {
+    cursor:pointer;
+    height: 85%;
+    width: 65%;
+    transform: translate(14%,0);
+}
+
+.doctors__contact-info {
+    bottom: -13vh;
+    width: 100%;
+    height:10vh; 
+    position: absolute;
+    text-align:center;
+    color:grey;
+
+}
+
+.doctors__contact-info p {
+    padding: 3vh 0;
+    font-size:1rem;
+    font-famile:sans-serif;
+    whtie-space:pre-wrap;
+    line-height:120%;
+}

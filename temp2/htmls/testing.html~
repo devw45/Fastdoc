@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/testing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  </head>
+
+  <body>
+    
+    <div class="swiper mySwiper" >
+      <div class="swiper-wrapper">
+	<img src="../Images/lee.png">
+	<img src="../Images/lee.png">
+	<img src="../Images/lee.png">
+	<img src="../Images/lee.png">
+	<img src="../Images/lee.png">
+	<img src="../Images/lee.png">
+	<img src="../Images/lee.png">
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/testing.js"></script>
+  </body>
+</html>
